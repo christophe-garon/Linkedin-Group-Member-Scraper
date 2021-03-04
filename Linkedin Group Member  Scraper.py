@@ -625,7 +625,7 @@ def export_df():
     
     #Create/Update Excel file
     writer = pd.ExcelWriter("{}/{}_linkedin.xlsx".format(company_name,company_name), engine='xlsxwriter')
-    df.to_excel(writer, sheet_name='Page Egagers', index=False)
+    df.to_excel(writer, sheet_name='Group Members', index=False)
     common_companies.to_excel(writer, sheet_name='Company Interest', index=False)
     common_influencers.to_excel(writer, sheet_name='Influencer Interest', index=False)
     age_stats.to_excel(writer, sheet_name='Demographic Stats', index=True)
